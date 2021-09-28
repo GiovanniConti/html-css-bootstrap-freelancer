@@ -1,0 +1,16 @@
+:root{
+    --bs-secondary-rgb: 44, 62, 80;
+    --bs-success-rgb: 26, 188, 156;
+}
+
+.avatar{
+    height: 250px;
+}
+
+.img-width{
+    max-width: 100%;
+}
+
+.margin-negative{
+    margin: -10px;
+}
