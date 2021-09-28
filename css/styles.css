@@ -1,6 +1,7 @@
 :root{
     --bs-secondary-rgb: 44, 62, 80;
     --bs-success-rgb: 26, 188, 156;
+    --bs-light-rgb: 58, 84, 109;
 }
 
 .avatar{
@@ -12,5 +13,10 @@
 }
 
 .margin-negative{
-    margin: -10px;
+    margin-right: -10px;
+}
+
+.link-green, .link-green:hover{
+    text-decoration: none;
+    color: rgb(26, 188, 156);
 }
