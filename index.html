@@ -56,12 +56,77 @@
             <!-- Contenitore col -->
             <div class="container">
                 <div class="row gy-4">
-                    <div class="col-12 col-md-6 col-xl-4 text-center"> <img class="img-width" src="img/cabin.png" alt="cabin"> </div>
-                    <div class="col-12 col-md-6 col-xl-4 text-center"> <img class="img-width" src="img/cake.png" alt="cake"> </div>
-                    <div class="col-12 col-md-6 col-xl-4 text-center"> <img class="img-width" src="img/circus.png" alt="circus"> </div>
-                    <div class="col-12 col-md-6 col-xl-4 text-center"> <img class="img-width" src="img/game.png" alt="game"> </div>
-                    <div class="col-12 col-md-6 col-xl-4 text-center"> <img class="img-width" src="img/safe.png" alt="safe"> </div>
-                    <div class="col-12 col-md-6 col-xl-4 text-center"> <img class="img-width" src="img/submarine.png" alt=""> </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="description-container position-relative">
+                            <img class="img-width" src="img/cabin.png" alt="cabin">
+                            <div class="description text-center">
+                                <div class="description-text">
+                                    <h2 class="description-title">Casa</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, nemo et ad optio tenetur consequatur odit a perferendis voluptates id ipsam!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="description-container position-relative">
+                            <img class="img-width" src="img/cake.png" alt="cake">
+                            <div class="description">
+                                <div class="description-text">
+                                    <h2>Torta</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, nemo et ad optio tenetur consequatur odit a perferendis voluptates id ipsam!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="description-container position-relative">
+                            <img class="img-width" src="img/circus.png" alt="circus">
+                            <div class="description">
+                                <div class="description-text">
+                                    <h2>Circo</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, nemo et ad optio tenetur consequatur odit a perferendis voluptates id ipsam!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="description-container position-relative">
+                            <img class="img-width" src="img/game.png" alt="game">
+                            <div class="description">
+                                <div class="description-text">
+                                    <h2>video giochi</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, nemo et ad optio tenetur consequatur odit a perferendis voluptates id ipsam!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="description-container position-relative">
+                            <img class="img-width" src="img/safe.png" alt="safe">
+                            <div class="description">
+                                <div class="description-text">
+                                    <h2>cassa forte</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, nemo et ad optio tenetur consequatur odit a perferendis voluptates id ipsam!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="description-container position-relative">
+                            <img class="img-width" src="img/submarine.png" alt="">
+                            <div class="description">
+                                <div class="description-text">
+                                    <h2>yellow submarine</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, nemo et ad optio tenetur consequatur odit a perferendis voluptates id ipsam!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -102,10 +167,27 @@
             </div>
 
             <form class="container d-flex flex-column justify-content-start px-5">
-                <input type="text" placeholder="Name" class="border-0 border-bottom py-3">
-                <input type="email" placeholder="Email Address" class="border-0 border-bottom py-3">
-                <input type="number" placeholder="Phone Number" class="border-0 border-bottom py-3">
-                <textarea placeholder="Message" rows="5" class="border-0 border-bottom py-3"></textarea>
+                <div class="form-floating my-3">
+                    <input type="text" placeholder="Name" class="form-control border-0 border-bottom ">
+                    <label>Name</label>
+                </div>
+
+                <div class="form-floating my-3">
+                    <input type="email" placeholder="Email Address" class="form-control border-0 border-bottom">
+                    <label>Email Address</label>
+                    
+                </div>
+
+                <div class="form-floating my-3">
+                    <input type="number" placeholder="Phone Number" class="form-control border-0 border-bottom">
+                    <label>Phone Number</label>
+                </div>
+
+                <div class="form-floating my-3">
+                    <textarea placeholder="Message" class="form-control border-0 border-bottom " style="height: 150px"></textarea>
+                    <label>Message</label>
+                </div>
+
                 <input type="submit" value="Send" class="submit-btn mt-3 p-2 rounded border-0 bg-success">
             </form>
         </section>
