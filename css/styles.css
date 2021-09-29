@@ -16,7 +16,19 @@
     margin-right: -10px;
 }
 
+.submit-btn{
+    width: 90px;
+}
+
 .link-green, .link-green:hover{
     text-decoration: none;
     color: rgb(26, 188, 156);
+}
+
+.socialLink{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    padding: 9px;
+    border-radius: 50%;
 }

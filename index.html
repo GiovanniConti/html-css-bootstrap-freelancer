@@ -12,10 +12,15 @@
 </head>
 <body>
     <header class="bg-secondary">
-        <nav class="d-flex justify-content-between align-items-center px-3 py-4">
+        <nav class="d-flex justify-content-between align-items-center p-4 align-middle">
             <h2 class="text-white fs-3 fw-bold text-uppercase">start bootstrap</h2>
             <div class="">
-                <button class="d-block d-sm-none border-1 border-white rounded bg-transparent"><i class="bi bi-list text-white-50"></i></button>
+                <button class="d-block d-md-none border-1 border-white rounded bg-transparent"><i class="bi bi-list text-white-50"></i></button>
+                <ul class="list-inline d-none d-md-block">
+                    <li class="list-inline-item"><a href="#portfolio" class="text-decoration-none text-uppercase text-white fs-5 p-2">portfolio</a></li>
+                    <li class="list-inline-item"><a href="#about" class="text-decoration-none text-uppercase text-white fs-5 p-2">about</a></li>
+                    <li class="list-inline-item"><a href="#contact" class="text-decoration-none text-uppercase text-white fs-5 p-2">contact</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -37,7 +42,7 @@
         </section>
 
         <!-- Section portfolio -->
-        <section class="py-5 text-center">
+        <section id="portfolio" class="py-5 text-center">
 
             <h2 class="text-uppercase fs-3 fw-bold">Portfolio</h2>
             <div class="fs-1 pb-4 m-auto text-center">
@@ -51,18 +56,18 @@
             <!-- Contenitore col -->
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center"> <img class="img-width" src="img/cabin.png" alt="cabin"> </div>
-                    <div class="col-12 text-center"> <img class="img-width" src="img/cake.png" alt="cake"> </div>
-                    <div class="col-12 text-center"> <img class="img-width" src="img/circus.png" alt="circus"> </div>
-                    <div class="col-12 text-center"> <img class="img-width" src="img/game.png" alt="game"> </div>
-                    <div class="col-12 text-center"> <img class="img-width" src="img/safe.png" alt="safe"> </div>
-                    <div class="col-12 text-center"> <img class="img-width" src="img/submarine.png" alt=""> </div>
+                    <div class="col-12 col-md-6 col-xl-4 text-center"> <img class="img-width" src="img/cabin.png" alt="cabin"> </div>
+                    <div class="col-12 col-md-6 col-xl-4 text-center"> <img class="img-width" src="img/cake.png" alt="cake"> </div>
+                    <div class="col-12 col-md-6 col-xl-4 text-center"> <img class="img-width" src="img/circus.png" alt="circus"> </div>
+                    <div class="col-12 col-md-6 col-xl-4 text-center"> <img class="img-width" src="img/game.png" alt="game"> </div>
+                    <div class="col-12 col-md-6 col-xl-4 text-center"> <img class="img-width" src="img/safe.png" alt="safe"> </div>
+                    <div class="col-12 col-md-6 col-xl-4 text-center"> <img class="img-width" src="img/submarine.png" alt=""> </div>
                 </div>
             </div>
         </section>
 
         <!-- Sezione About -->
-        <section class="bg-success text-center p-5">
+        <section id="about" class="bg-success text-center p-5">
             <h2 class="text-uppercase text-white fw-bold fs-3">about</h2>
 
             <div class="text-white fs-1 p-3">
@@ -74,15 +79,17 @@
             </div>
 
             <div class="text-white fs-4 px-5 text-start">
-                <p class="">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                <p class="">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                <div class="row gy-2">
+                    <p class=" col-md-6">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    <p class=" col-md-6">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                </div>
             </div>
 
             <button class=" border-white rounded bg-transparent text-white fs-3 py-2 px-3"><i class="fas fa-download"></i> Download</button>
         </section>
 
         <!-- Sezione contact me -->
-        <section class="p-5 text-center">
+        <section id="contact" class="p-5 text-center">
 
             <h2 class="text-uppercase fs-3 fw-bold">contact me</h2>
 
@@ -99,32 +106,36 @@
                 <input type="email" placeholder="Email Address" class="border-0 border-bottom py-3">
                 <input type="number" placeholder="Phone Number" class="border-0 border-bottom py-3">
                 <textarea placeholder="Message" rows="5" class="border-0 border-bottom py-3"></textarea>
-                <input type="submit" value="Send" class="w-25 mt-3 p-2 rounded border-0 bg-success">
+                <input type="submit" value="Send" class="submit-btn mt-3 p-2 rounded border-0 bg-success">
             </form>
         </section>
     </main>
 
     <footer>
-        <div class="bg-light text-white text-center py-3 px-5 container">
-            <div class="p-3 col-12">
-                <h4 class="fw-normal">Location</h4>
-                <p>2215 John Daniel Drive Clark, MO 54243</p>
-            </div>
-            <div class="p-3 col-12">
-                <h4 class="fw-normal">around the web</h4>
-                <div class="py-3">
-                    <a class="border border-white rounded-circle border-1 p-3"><i class="fab fa-facebook-f fs-4 link-light"></i></a>
-                    <a class="border border-white rounded-circle border-1 p-3"><i class="fab fa-google-plus-g fs-4 link-light"></i></a>
-                    <a class="border border-white rounded-circle border-1 p-3"><i class="fab fa-twitter fs-4 link-light"></i></a>
-                    <a class="border border-white rounded-circle border-1 p-3"><i class="fab fa-linkedin-in fs-4 link-light"></i></a>
+        <div class="bg-light text-white text-center py-3 px-5">
+            <div class="row">
+                <div class="p-3 col-12 col-md-4">
+                    <h4 class="text-uppercase fw-normal">Location</h4>
+                    <p>2215 John Daniel Drive Clark, MO 54243</p>
+                </div>
+
+                <div class="p-3 col-12 col-md-4">
+                    <h4 class="text-uppercase fw-normal">around the web</h4>
+                    <div class="py-3">
+                        <a class="m-1"><i class="fab fa-facebook-f fs-5 link-light socialLink"></i></a>
+                        <a class="m-1"><i class="fab fa-google-plus-g fs-5 link-light socialLink"></i></a>
+                        <a class="m-1"><i class="fab fa-twitter fs-5 link-light socialLink"></i></a>
+                        <a class="m-1"><i class="fab fa-linkedin-in fs-5 link-light socialLink"></i></a>
+                    </div>
+                </div>
+
+                <div class="p-3 col-12 col-md-4">
+                    <h4 class="text-uppercase fw-normal">about freelancer</h4>
+                    <p>Freelance is a free to use, open source Bootstrap theme created by <a class="link-green">Start Bootstrap</a>.</p>
                 </div>
             </div>
-
-            <div class="p-3 col-12">
-                <h4 class="fw-normal">about freelancer</h4>
-                <p>Freelance is a free to use, open source Bootstrap theme created by <a class="link-green">Start Bootstrap</a>.</p>
-            </div>
         </div>
+
         <div class="text-center text-white p-5 bg-secondary">
             <span>Copyright &copy; Your Website 2019</span>
         </div>
