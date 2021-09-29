@@ -4,6 +4,10 @@
     --bs-light-rgb: 58, 84, 109;
 }
 
+.marginHeader{
+    margin-bottom: 85px;
+}
+
 .avatar{
     height: 250px;
 }
@@ -31,4 +35,24 @@
     border: 1px solid white;
     padding: 9px;
     border-radius: 50%;
+}
+
+.fb:hover{
+    color: rgb(78, 103, 165);
+    border-color: rgb(78, 103, 165);
+}
+
+.gp:hover{
+    color: rgb(88, 165, 92);
+    border-color: rgb(88, 165, 92);
+}
+
+.tw:hover{
+    color: rgb(107, 163, 209);
+    border-color: rgb(107, 163, 209);
+}
+
+.in:hover{
+    color:rgb(49, 118, 176);
+    border-color: rgb(49, 118, 176);;
 }
