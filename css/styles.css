@@ -31,6 +31,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    backdrop-filter: blur(3px);
 }
 
 .description-text{
@@ -38,6 +39,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation-name: card-description;
+    animation-duration: 0.6s;
+}
+
+@keyframes card-description {
+    from {top:100%}
+    to {top:50%}
 }
 
 .submit-btn{
